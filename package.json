@@ -1,0 +1,62 @@
+{
+  "name": "confr-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scimbor/ConfR__FrontEnd.git"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "moment": "^2.24.0",
+    "prettier": "^1.16.4",
+    "rc-calendar": "^9.12.4",
+    "rc-time-picker": "^3.6.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.1",
+    "react-intl": "^2.8.0",
+    "react-loader-spinner": "^2.3.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.1",
+    "storybook-addon-intl": "^2.4.1",
+    "styled-components": "^4.1.3",
+    "styled-normalize": "^8.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -c .storybook -o build",
+    "lint": "eslint ./src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/addon-knobs": "^5.0.10",
+    "@storybook/react": "^5.0.3",
+    "babel-loader": "^8.0.5",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "husky": "^1.3.1",
+    "http-proxy-middleware": "^0.19.1",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  }
+}
